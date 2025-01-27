@@ -3,18 +3,10 @@ package server;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.Duration;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
 import common.*;
 import controllers.BookReturnController;
 import common.BookReturnMessage;
@@ -23,13 +15,10 @@ import gui.ConnectionEntryController;
 import ocsf.server.AbstractServer;
 import ocsf.server.ConnectionToClient;
 import static common.GenericMessage.Action.*;
-import controllers.BookReturnController;
-import common.BookReturnMessage;
 //BLib server-side
 public class server extends AbstractServer{
 	
 		public static DBController db;
-		//private ConnectionEntryController conEntry;
 		public static ConnectionEntryController conEntry;
 		private SubscriberController subscriberController;
 		private BorrowController borrowController;

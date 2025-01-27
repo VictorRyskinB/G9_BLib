@@ -20,6 +20,7 @@ public class CheckAvailabilityWindowController extends BaseController {
     @FXML
     private TextField bookName;
 
+
     /**
      * Retrieve the name of the book entered in the text field.
      * 
